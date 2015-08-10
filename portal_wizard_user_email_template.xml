@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" ?>
+<openerp>
+    <data>
+        <record id="email_template_portal_wizard" model="email.template">
+            <field name="name">Portal wizard user</field>
+            <field name="email_from">noreply@abakusitsolutions.eu</field>
+            <field name="subject">subject_email_template_portal_wizard</field>
+            <field name="email_to">${object.email}</field>
+            <field name="model_id" ref="portal.model_portal_wizard_user"/>
+            <field name="auto_delete" eval="True"/>
+            <field name="lang">${object.partner_id.lang}</field>
+            <field name="body_html">body_html_email_template_portal_wizard</field>
+        </record>
+    </data>
+</openerp>
