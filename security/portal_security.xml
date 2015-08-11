@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <record id="website_sale.product_template_public" model="ir.rule">
+            <field name="active">0</field>
+        </record>
+    </data>
+</openerp>

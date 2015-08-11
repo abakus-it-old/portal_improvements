@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<openerp>
+    <data>
+        <record model="ir.ui.view" id="project_issue_allow_portal_read_description">
+            <field name="name">project.issue.allow.portal.read.description</field>
+            <field name="model">project.issue</field>
+            <field name="inherit_id" ref="project_issue.project_issue_form_view"/>
+            <field name="arch" type="xml">
+                <field name="description" position="attributes">
+                    <attribute name="groups">base.group_user,base.group_portal</attribute>
+                </field>
+            </field>
+        </record>
+        <record model="ir.ui.view" id="project_issue_allow_portal_read_worklogs">
+            <field name="name">project.issue.allow.portal.read.worklogs</field>
+            <field name="model">project.issue</field>
+            <field name="inherit_id" ref="project_issue_sheet.project_issue_form_view"/>
+            <field name="arch" type="xml">
+                <field name="timesheet_ids" position="attributes">
+                    <attribute name="groups">base.group_user,base.group_portal</attribute>
+                </field>
+            </field>
+        </record>
+    </data>
+</openerp>
