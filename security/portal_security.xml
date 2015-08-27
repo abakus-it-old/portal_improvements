@@ -1,27 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <openerp>
-    <data>
-        <!-- Does not work ... -->
-        <!-- Allow product access for portal users. It removes the portal entry from this rule. -->
-        <record id="website_sale.product_template_public" model="ir.rule">
-            <field name="groups" eval="[(4, ref('base.group_public'))]"/>
-            <!--
-            <field name="active">0</field>
-            -->
-        </record>
-        <!-- domain using res.partner.category for keyuser -->
-        <!--   
-        <field name="domain_force">['|','&amp;',('portal_category_id','in',user.partner_id.category_id.ids),('partner_id','in',user.partner_id.parent_id.child_ids.ids),'|','&amp;',('portal_category_id','in',user.partner_id.category_id.ids),('partner_id','=',[user.partner_id.parent_id.id]),'|',('message_follower_ids','in',[user.partner_id.id]),('partner_id','=',[user.partner_id.id])]</field>
-        -->
-        <record id="portal_contracts_access" model="ir.rule">
-            <field name="name">Portal contracts access</field>
-            <field name="model_id" ref="analytic.model_account_analytic_account"/>
-            <field name="domain_force">['|','&amp;',('portal_access','=',[user.partner_id.keyuser]),('partner_id','in',user.partner_id.parent_id.child_ids.ids),'|','&amp;',('portal_access','=',[user.partner_id.keyuser]),('partner_id','=',[user.partner_id.parent_id.id]),'|',('message_follower_ids','in',[user.partner_id.id]),('partner_id','=',[user.partner_id.id])]</field>
-            <field name="groups" eval="[(4, ref('base.group_portal'))]"/>
-            <field name="perm_read" eval="True"/>
-            <field name="perm_write" eval="False"/>
-            <field name="perm_create" eval="False"/>
-            <field name="perm_unlink" eval="False"/>
-        </record>
-    </data>
+    <data noupdate="1">
+		<record id="portal_contracts_access" model="ir.rule">
+			<field name="name">Portal contracts access</field>
+			<field name="model_id" ref="analytic.model_account_analytic_account"/>
+			<field name="domain_force">['|','&amp;',(user.partner_id.keyuser_sales,'=',True),('partner_id','in',user.partner_id.parent_id.child_ids.ids),
+            '|','&amp;',(user.partner_id.keyuser_sales,'=',True),('partner_id','=',[user.partner_id.parent_id.id]),
+            '|',('message_follower_ids','in',[user.partner_id.id]),('partner_id','=',[user.partner_id.id])]</field>
+			<field name="groups" eval="[(4, ref('base.group_portal'))]"/>
+			<field name="perm_read" eval="True"/>
+			<field name="perm_write" eval="False"/>
+			<field name="perm_create" eval="False"/>
+			<field name="perm_unlink" eval="False"/>
+		</record>
+	</data>
+	<data noupdate="0">
+		<function model="portal.wizard" name="_update_existing_ir_rules_for_keyuser_managment"/>
+	</data>
 </openerp>

@@ -4,12 +4,39 @@
         <record id="email_template_portal_wizard" model="email.template">
             <field name="name">Portal wizard user</field>
             <field name="email_from">noreply@abakusitsolutions.eu</field>
-            <field name="subject">subject_email_template_portal_wizard</field>
+            <field name="subject">Your Odoo account at %(company)s</field>
             <field name="email_to">${object.email}</field>
-            <field name="model_id" ref="portal.model_portal_wizard_user"/>
+            <field name="model_id" search="[('model','=','portal.wizard.user')]" model="ir.model"/>
             <field name="auto_delete" eval="True"/>
             <field name="lang">${object.partner_id.lang}</field>
-            <field name="body_html">body_html_email_template_portal_wizard</field>
+            <field name="body_html"><![CDATA[
+            <div style="font-family: Arial, Helvetica, Calibri, Verdana, sans-serif; font-size: 12px; color: rgb(34, 34, 34); background-color: #FFF; padding: 0 5px 0 5px; link">
+
+    <p>Dear client,</p>
+
+    <p>You have been granted to access our Odoo Portal. 
+This portal allows you to follow your quotations, sales order, contract, projects and support tickets with %(company)s.</p>
+
+    <p>Please take some time to set your password and log you for the first time.</p>
+    
+    <p style="border-left: 2px solid #E97B2E; margin-left: 10px; padding-left: 5px;">
+        &nbsp;&nbsp;<strong>LOG INFORMATION</strong><br>
+        &nbsp;&nbsp;URL: <strong>%(signup_url)s</strong><br>
+        &nbsp;&nbsp;Database: <strong>%(db)s</strong><br>
+        &nbsp;&nbsp;Username: <strong> %(login)s</strong><br>
+    </p>  
+    
+    <p>Don't hesitate to contact us if you have any question.</p>
+    <p>Thanks a lot for having chosen %(company)s !</p>
+
+    <!-- SIGNATURE -->
+    <div style="width: 100%%; margin: 0px; padding: 0px; background-color: #E97B2E; border-top-left-radius: 5px 5px; border-top-right-radius: 5px 5px; background-repeat: repeat no-repeat;">
+        <h3 style="margin: 0px; padding: 10px 15px; font-size: 14px; color: #DDD;"><strong>%(company)s</strong></h3>
+    </div>
+    <div style="width: 100%% -15px; margin: 0px; padding: 5px 15px; line-height: 16px; background-color: #DDD; border-bottom-right-radius: 5px 5px; border-bottom-left-radius: 5px 5px; ">
+        <span style="color: #222; margin-bottom: 5px; display: block; "><a href="http://www.abakusitsolutions.eu">www.abakusitsolutions.eu</a></span></div>
+</div>
+]]></field>
         </record>
     </data>
 </openerp>

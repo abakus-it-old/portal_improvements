@@ -1,0 +1,311 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* portal_improvements
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 8.0-20150624\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-08-27 13:01+0000\n"
+"PO-Revision-Date: 2015-08-27 13:01+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: portal_improvements
+#: view:portal.wizard:portal_improvements.portal_wizard_email_template_view
+msgid "%(signup_url)s"
+msgstr "%(signup_url)s"
+
+#. module: portal_improvements
+#: view:portal.wizard:portal_improvements.portal_wizard_email_template_view
+msgid "(name of the company),"
+msgstr "(name of the company),"
+
+#. module: portal_improvements
+#: view:portal.wizard:portal_improvements.portal_wizard_email_template_view
+msgid "(name of the database),"
+msgstr "(name of the database),"
+
+#. module: portal_improvements
+#: view:portal.wizard:portal_improvements.portal_wizard_email_template_view
+msgid "(name of the portal),"
+msgstr "(name of the portal),"
+
+#. module: portal_improvements
+#: view:portal.wizard:portal_improvements.portal_wizard_email_template_view
+msgid "(name of the selected user),"
+msgstr "(name of the selected user),"
+
+#. module: portal_improvements
+#: view:portal.wizard:portal_improvements.portal_wizard_email_template_view
+msgid "(url to access the portal),"
+msgstr "(url to access the portal),"
+
+#. module: portal_improvements
+#: view:portal.wizard:portal_improvements.portal_wizard_email_template_view
+msgid "(user odoo login),"
+msgstr "(user odoo login),"
+
+#. module: portal_improvements
+#: view:portal.wizard:portal_improvements.portal_wizard_email_template_view
+msgid "-------------"
+msgstr "-------------"
+
+#. module: portal_improvements
+#: view:portal.wizard:portal_improvements.portal_wizard_email_template_view
+msgid "---------------------------------------------------------------"
+msgstr "---------------------------------------------------------------"
+
+#. module: portal_improvements
+#: model:email.template,body_html:portal_improvements.email_template_portal_wizard
+msgid "<div style=\"font-family: Arial, Helvetica, Calibri, Verdana, sans-serif; font-size: 12px; color: rgb(34, 34, 34); background-color: #FFF; padding: 0 5px 0 5px; link\">\n"
+"\n"
+"    <p>Dear client,</p>\n"
+"\n"
+"    <p>You have been granted to access our Odoo Portal. \n"
+"This portal allows you to follow your quotations, sales order, contract, projects and support tickets with %(company)s.</p>\n"
+"\n"
+"    <p>Please take some time to set your password and log you for the first time.</p>\n"
+"    \n"
+"    <p style=\"border-left: 2px solid #E97B2E; margin-left: 10px; padding-left: 5px;\">\n"
+"        &nbsp;&nbsp;<strong>LOG INFORMATION</strong><br>\n"
+"        &nbsp;&nbsp;URL: <strong>%(signup_url)s</strong><br>\n"
+"        &nbsp;&nbsp;Database: <strong>%(db)s</strong><br>\n"
+"        &nbsp;&nbsp;Username: <strong> %(login)s</strong><br>\n"
+"    </p>  \n"
+"    \n"
+"    <p>Don't hesitate to contact us if you have any question.</p>\n"
+"    <p>Thanks a lot for having chosen %(company)s !</p>\n"
+"\n"
+"    <!-- SIGNATURE -->\n"
+"    <div style=\"width: 100%%; margin: 0px; padding: 0px; background-color: #E97B2E; border-top-left-radius: 5px 5px; border-top-right-radius: 5px 5px; background-repeat: repeat no-repeat;\">\n"
+"        <h3 style=\"margin: 0px; padding: 10px 15px; font-size: 14px; color: #DDD;\"><strong>%(company)s</strong></h3>\n"
+"    </div>\n"
+"    <div style=\"width: 100%% -15px; margin: 0px; padding: 5px 15px; line-height: 16px; background-color: #DDD; border-bottom-right-radius: 5px 5px; border-bottom-left-radius: 5px 5px; \">\n"
+"        <span style=\"color: #222; margin-bottom: 5px; display: block; \"><a href=\"http://www.abakusitsolutions.eu\">www.abakusitsolutions.eu</a></span></div>\n"
+"</div>"
+msgstr "<div style=\"font-family: Arial, Helvetica, Calibri, Verdana, sans-serif; font-size: 12px; color: rgb(34, 34, 34); background-color: #FFF; padding: 0 5px 0 5px; link\">\n"
+"\n"
+"    <p>Cher client,</p>\n"
+"\n"
+"    <p>Vous venez d'être autorisé d'accéder à notre Portail Odoo. Ce portail vous permet de suivre les offres, commandes, factures, contrats, projets et tickets de support de %(company)s.</p>\n"
+"\n"
+"    <p>Veuillez svp prendre quelques minutes pour définir votre mot de passe et vous y connecter pour la première fois.</p>\n"
+"    \n"
+"    <p style=\"border-left: 2px solid #E97B2E; margin-left: 10px; padding-left: 5px;\">\n"
+"        &nbsp;&nbsp;<strong>INFORMATIONS DE CONNEXION</strong><br>\n"
+"        &nbsp;&nbsp;URL: <strong>%(signup_url)s</strong><br>\n"
+"        &nbsp;&nbsp;Base de données: <strong>%(db)s</strong><br>\n"
+"        &nbsp;&nbsp;Nom d'utilisateur: <strong> %(login)s</strong><br>\n"
+"    </p>  \n"
+"    \n"
+"    <p>Si vous avez la moindre question, n'hésitez pas à nous contacter.</p>\n"
+"    <p>Nous vous remercions d'avoir choisi %(company)s!</p>\n"
+"\n"
+"    <!-- SIGNATURE -->\n"
+"    <div style=\"width: 100%%; margin: 0px; padding: 0px; background-color: #E97B2E; border-top-left-radius: 5px 5px; border-top-right-radius: 5px 5px; background-repeat: repeat no-repeat;\">\n"
+"        <h3 style=\"margin: 0px; padding: 10px 15px; font-size: 14px; color: #DDD;\"><strong>%(company)s</strong></h3>\n"
+"    </div>\n"
+"    <div style=\"width: 100%% -15px; margin: 0px; padding: 5px 15px; line-height: 16px; background-color: #DDD; border-bottom-right-radius: 5px 5px; border-bottom-left-radius: 5px 5px; \">\n"
+"        <span style=\"color: #222; margin-bottom: 5px; display: block; \"><a href=\"http://www.abakusitsolutions.eu\">www.abakusitsolutions.eu</a></span></div>\n"
+"</div>"
+
+#. module: portal_improvements
+#: view:account.analytic.account:portal_improvements.portal_action_contracts_form_view
+#: model:ir.model,name:portal_improvements.model_account_analytic_account
+msgid "Analytic Account"
+msgstr "Compte analytique"
+
+#. module: portal_improvements
+#: view:account.analytic.account:portal_improvements.portal_action_contracts_tree_view
+msgid "Analytic Accounts"
+msgstr "Comptes analytiques"
+
+#. module: portal_improvements
+#: view:account.analytic.account:portal_improvements.portal_action_contracts_form_view
+msgid "Contract Information"
+msgstr "Renseignements sur le contrat"
+
+#. module: portal_improvements
+#: model:ir.actions.act_window,name:portal_improvements.portal_action_contracts
+#: model:ir.ui.menu,name:portal_improvements.portal_contracts
+msgid "Contracts"
+msgstr "Contrats"
+
+#. module: portal_improvements
+#: view:portal.wizard:portal_improvements.portal_wizard_email_template_view
+msgid "Dear %(name)s - Your Odoo account at %(company)s,"
+msgstr "Dear %(name)s - Your Odoo account at %(company)s,"
+
+#. module: portal_improvements
+#: view:account.analytic.account:portal_improvements.portal_action_contracts_form_view
+msgid "Download report"
+msgstr "Download report"
+
+#. module: portal_improvements
+#: code:addons/portal_improvements/model/portal_wizard_user.py:30
+#, python-format
+msgid "Email Required"
+msgstr "Email Required"
+
+#. module: portal_improvements
+#: field:portal.wizard,email_template:0
+msgid "Email template"
+msgstr "Email template"
+
+#. module: portal_improvements
+#: view:account.analytic.account:portal_improvements.portal_action_contracts_form_view
+msgid "End Date"
+msgstr "Date de fin"
+
+#. module: portal_improvements
+#: view:portal.wizard:portal_improvements.portal_wizard_email_template_view
+msgid "Example:"
+msgstr "Example:"
+
+#. module: portal_improvements
+#: view:portal.wizard:portal_improvements.portal_wizard_email_template_view
+msgid "HOW TO SET UP THE EMAIL TEMPLATE"
+msgstr "HOW TO SET UP THE EMAIL TEMPLATE"
+
+#. module: portal_improvements
+#: field:res.partner,keyuser:0
+msgid "Keyuser"
+msgstr "Keyuser"
+
+#. module: portal_improvements
+#: view:account.analytic.account:portal_improvements.portal_action_contracts_form_view
+msgid "Once the end date of the contract is\n"
+"                                        passed or the maximum number of service\n"
+"                                        units (e.g. support contract) is\n"
+"                                        reached, the account manager is notified \n"
+"                                        by email to renew the contract with the\n"
+"                                        customer."
+msgstr "Once the end date of the contract is\n"
+"                                        passed or the maximum number of service\n"
+"                                        units (e.g. support contract) is\n"
+"                                        reached, the account manager is notified \n"
+"                                        by email to renew the contract with the\n"
+"                                        customer."
+
+#. module: portal_improvements
+#: model:ir.model,name:portal_improvements.model_res_partner
+msgid "Partner"
+msgstr "Partenaire"
+
+#. module: portal_improvements
+#: model:ir.model,name:portal_improvements.model_portal_wizard
+msgid "Portal Access Management"
+msgstr "Gestion de l'accès au portail"
+
+#. module: portal_improvements
+#: model:ir.model,name:portal_improvements.model_portal_wizard_user
+msgid "Portal User Config"
+msgstr "Paramétrage du portail utilisateur"
+
+#. module: portal_improvements
+#: field:account.analytic.account,portal_access:0
+msgid "Portal access"
+msgstr "Portal access"
+
+#. module: portal_improvements
+#: view:account.analytic.account:portal_improvements.portal_action_contracts_form_view
+msgid "Renewal"
+msgstr "Renouvellement"
+
+#. module: portal_improvements
+#: view:account.analytic.account:portal_improvements.portal_action_contracts_form_view
+msgid "SLA"
+msgstr "SLA"
+
+#. module: portal_improvements
+#: view:account.analytic.account:portal_improvements.portal_action_contracts_form_view
+msgid "SLA rules"
+msgstr "SLA rules"
+
+#. module: portal_improvements
+#: view:account.analytic.account:portal_improvements.portal_action_contracts_form_view
+msgid "Service Report"
+msgstr "Rapport de service"
+
+#. module: portal_improvements
+#: view:account.analytic.account:portal_improvements.portal_action_contracts_form_view
+msgid "Terms and Conditions"
+msgstr "Termes et conditions"
+
+#. module: portal_improvements
+#: view:portal.wizard:portal_improvements.portal_wizard_email_template_view
+msgid "The email template require following attributes:"
+msgstr "The email template require following attributes:"
+
+#. module: portal_improvements
+#: view:portal.wizard:portal_improvements.portal_wizard_email_template_view
+msgid "Username: %(login)s - Portal: %(portal_url)s - Database: %(db)s"
+msgstr "Username: %(login)s - Portal: %(portal_url)s - Database: %(db)s"
+
+#. module: portal_improvements
+#: view:portal.wizard:portal_improvements.portal_wizard_email_template_view
+msgid "You can set or change your password via the following url:"
+msgstr "You can set or change your password via the following url:"
+
+#. module: portal_improvements
+#: view:portal.wizard:portal_improvements.portal_wizard_email_template_view
+msgid "You have been given access to %(company)s's %(portal)s."
+msgstr "You have been given access to %(company)s's %(portal)s."
+
+#. module: portal_improvements
+#: code:addons/portal_improvements/model/portal_wizard_user.py:31
+#, python-format
+msgid "You must have an email address in your User Preferences to send emails."
+msgstr "You must have an email address in your User Preferences to send emails."
+
+#. module: portal_improvements
+#: model:email.template,subject:portal_improvements.email_template_portal_wizard
+msgid "Your Odoo account at %(company)s"
+msgstr "Votre compte au portail Odoo chez %(company)s"
+
+#. module: portal_improvements
+#: view:portal.wizard:portal_improvements.portal_wizard_email_template_view
+msgid "Your login account data is:"
+msgstr "Your login account data is:"
+
+#. module: portal_improvements
+#: view:project.issue:portal_improvements.project_issue_allow_portal_read_description
+#: view:project.issue:portal_improvements.project_issue_allow_portal_read_worklogs
+msgid "base.group_user,base.group_portal"
+msgstr "base.group_user,base.group_portal"
+
+#. module: portal_improvements
+#: view:portal.wizard:portal_improvements.portal_wizard_email_template_view
+msgid "company"
+msgstr "company"
+
+#. module: portal_improvements
+#: view:portal.wizard:portal_improvements.portal_wizard_email_template_view
+msgid "login"
+msgstr "login"
+
+#. module: portal_improvements
+#: view:portal.wizard:portal_improvements.portal_wizard_email_template_view
+msgid "name"
+msgstr "name"
+
+#. module: portal_improvements
+#: view:portal.wizard:portal_improvements.portal_wizard_email_template_view
+msgid "portal"
+msgstr "portal"
+
+#. module: portal_improvements
+#: view:portal.wizard:portal_improvements.portal_wizard_email_template_view
+msgid "portal_url"
+msgstr "portal_url"
+
+#. module: portal_improvements
+#: view:portal.wizard:portal_improvements.portal_wizard_email_template_view
+msgid "signup_url"
+msgstr "signup_url"
+
