@@ -95,7 +95,7 @@ class portal_wizard_improvements(osv.osv_memory):
             domain_force =  """
             [
             '|',   
-                '&',('privacy_visibility', '=', 'portal'),('partner_id','=',[user.partner_id.id]), 
+                '&',('project_id.privacy_visibility', '=', 'portal'),('partner_id','=',[user.partner_id.id]), 
                 '|',
                     ('project_id.privacy_visibility', '=', 'public'), 
                     '|',
