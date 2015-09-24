@@ -67,9 +67,6 @@
                                 <separator string="Terms and Conditions" name="description"/>
                                 <field name="description"/>
                             </page>
-                            <page string="Service Report">
-                                <button name="print_timesheets_report" type="object" string="Download report"/>
-                            </page>
                             <page string="SLA">
                                 <group>
                                     <field name="sla_bool"/>
