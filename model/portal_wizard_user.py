@@ -109,7 +109,9 @@ class portal_wizard_improvements(osv.osv_memory):
                             '|',
                                 '&',
                                 ('project_id.privacy_visibility', '=', 'portal'),
-                                ('message_follower_ids', 'child_of', [user.partner_id.commercial_partner_id.id]), 
+                                    '&',
+                                    (user.partner_id.keyuser_project,'=',True),
+                                    ('message_follower_ids', 'child_of', [user.partner_id.commercial_partner_id.id]), 
                                 '&',
                                 ('project_id.privacy_visibility', '=', 'followers'),
                                 ('message_follower_ids', 'in', [user.partner_id.id])
