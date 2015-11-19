@@ -92,7 +92,7 @@ msgstr "<div style=\"font-family: Arial, Helvetica, Calibri, Verdana, sans-serif
 "\n"
 "    <p>Sehr geehrter Kunde,</p>\n"
 "\n"
-"    <p>Sie sind berechtigt auf Unserem Odoo Portal zuzugreifen. Dieses Portal ermöglicht es, Ihre Angebote, Aufträge, Rechnungen, Verträge, Projekte und Support-Tickets zu folgen.</p>\n"
+"    <p>Sie sind berechtigt worden auf Unserem Odoo Portal zuzugreifen. Dieses Portal ermöglicht es, Ihre Angebote, Aufträge, Rechnungen, Verträge, Projekte und Support-Tickets zu folgen.</p>\n"
 "\n"
 "    <p>Bitte nehmen Sie sich ein paar Minuten Zeit, um Ihr Kennwort einzugeben und sich einmal zu Verbinden.</p>\n"
 "    \n"
