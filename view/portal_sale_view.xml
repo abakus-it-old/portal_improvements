@@ -7,7 +7,7 @@
             <field name="priority">30</field>
             <field name="arch" type="xml">
                 <tree string="Analytic Accounts">
-                    <field name="complete_name"/>
+                    <field name="name"/>
                     <field name="partner_id"/>
                     <field name="code"/>
                     <field name="date_start"/>
