@@ -1,7 +1,11 @@
 ﻿{
     'name': "AbAKUS portal improvements",
-    'version': '1.0',
-    'depends': ['account_analytic_analysis','account_analytic_account_improvements','sla', 'website_sale'],
+    'version': '9.0.1.0',
+    'depends': [
+	'sale_contract',
+	'account_analytic_account_improvements',
+	'sla',
+	'website_sale'],
     'author': "Bernard DELHEZ, AbAKUS it-solutions SARL",
     'website': "http://www.abakusitsolutions.eu",
     'category': 'Contract',

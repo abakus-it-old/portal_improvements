@@ -3,10 +3,10 @@
     <data>
      <record id="portal_action_contracts_tree_view" model="ir.ui.view">
             <field name="name">Portal contracts tree view</field>
-            <field name="model">account.analytic.account</field>
+            <field name="model">sale.subscription</field>
             <field name="priority">30</field>
             <field name="arch" type="xml">
-                <tree string="Analytic Accounts">
+                <tree string="Sale subscription Accounts">
                     <field name="name"/>
                     <field name="partner_id"/>
                     <field name="code"/>
@@ -20,7 +20,7 @@
         
         <record id="portal_action_contracts_form_view" model="ir.ui.view">
             <field name="name">Portal contracts form view</field>
-            <field name="model">account.analytic.account</field>
+            <field name="model">sale.subscription</field>
             <field name="priority">30</field>
             <field name="arch" type="xml">
                 <form string="Analytic Account">
@@ -94,7 +94,7 @@
 
         <record id="portal_action_contracts" model="ir.actions.act_window">
             <field name="name">Contracts</field>
-            <field name="res_model">account.analytic.account</field>
+            <field name="res_model">sale.subscription</field>
             <field name="view_mode">tree,form</field>
             <field name="domain">[('state','in',['negociation','open','pending'])]</field>
             <field name="context">{}</field>

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" ?>
 <openerp>
     <data>
-        <record id="email_template_portal_wizard" model="email.template">
+        <record id="email_template_portal_wizard" model="mail.template">
             <field name="name">Portal wizard user</field>
             <field name="email_from">info@abakusitsolutions.eu</field>
             <field name="subject">Your Odoo account at %(company)s</field>
