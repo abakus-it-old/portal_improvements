@@ -124,7 +124,7 @@ class portal_wizard_improvements(models.Model):
                 '&',(user.partner_id.keyuser_sales,'=',True),('partner_id','in',user.partner_id.parent_id.child_ids.ids),
                 '|',
                     '&',(user.partner_id.keyuser_sales,'=',True),('partner_id','=',[user.partner_id.parent_id.id]),
-                    '|',('message_follower_ids','child_of',[user.partner_id.id]),('partner_id','=',[user.partner_id.id])
+                    '|',('message_partner_ids','child_of',[user.partner_id.id]),('partner_id','=',[user.partner_id.id])
             ]
             
             """
