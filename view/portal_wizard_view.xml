@@ -13,20 +13,6 @@
                     <group>
                         <field name="email_template"/>
                     </group>
-                    <!-- 
-                    <div>
-                        <div><b>HOW TO SET UP THE EMAIL TEMPLATE</b></div>
-                        <div>The email template require following attributes:</div>
-                        <div><b>company</b> (name of the company), <b>name</b> (name of the selected user), <b>login</b> (user odoo login), <b>portal_url</b> (url to access the portal), <b>db</b> (name of the database), <b>signup_url</b></div>
-                        <div><br/>Example:</div>
-                        <div>Dear %%(name)s - Your Odoo account at %%(company)s,</div>
-                        <div>You have been given access to %%(company)s.</div>
-                        <div>Your login account data is:</div>
-                        <div>Username: %%(login)s - Portal: %%(portal_url)s - Database: %%(db)s</div>
-                        <div>You can set or change your password via the following url:</div>
-                        <div>   %%(signup_url)s</div>
-                    </div>
-                    -->
                 </field>
             </field>
         </record>
